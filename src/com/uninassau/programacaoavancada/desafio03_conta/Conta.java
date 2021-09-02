@@ -1,4 +1,6 @@
-package com.uninassau.programacaoavancada.desafio03;
+package com.uninassau.programacaoavancada.desafio03_conta;
+
+import javax.swing.*;
 
 public class Conta {
     private String nome;
@@ -11,6 +13,7 @@ public class Conta {
 
     public void sacar(double valor){
         if(valor > this.saldo || this.saldo == 0){
+            JOptionPane.showMessageDialog(null, "SALDO INSUFICIENTE!!!");
             System.out.println("Saldo Insuficiente");
         }else {
             this.setSaldo(this.getSaldo() - valor);
@@ -21,8 +24,8 @@ public class Conta {
         this.setSaldo(this.getSaldo() + valor);
     }
 
-    public void consultarSaldo(){
-        System.out.println(this.getSaldo());
+    public double consultarSaldo(){
+        return this.getSaldo();
     }
 
     public void consultarNome(){

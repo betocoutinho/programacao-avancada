@@ -1,4 +1,4 @@
-package com.uninassau.programacaoavancada.desafio01;
+package com.uninassau.programacaoavancada.desafio01_porta;
 
 public class Teste {
 

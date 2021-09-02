@@ -1,4 +1,4 @@
-package com.uninassau.programacaoavancada.desafio02;
+package com.uninassau.programacaoavancada.desafio02_calculadora;
 
 import javax.swing.*;
 
