@@ -18,8 +18,8 @@ public class Elevador {
         this.totalAndares = totalAndares;
     }
 
-    public boolean entra(){
-        if (this.pessoasPresentes <= capacidadeDoElevador){
+    public boolean entrar(){
+        if (this.pessoasPresentes < capacidadeDoElevador){
             this.pessoasPresentes++;
             return true;
         }else {
@@ -27,7 +27,7 @@ public class Elevador {
         }
     }
 
-    public boolean sai(){
+    public boolean sair(){
         if (this.pessoasPresentes > 0){
             this.pessoasPresentes--;
             return true;
@@ -49,7 +49,7 @@ public class Elevador {
 
 
     public boolean desce(int andar){
-        if (andar >= 0){
+        if (andar >= 0 && andar < andarAtual){
             this.andarAtual = andar;
             return true;
         }else {
